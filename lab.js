@@ -262,6 +262,29 @@ oculusReparo.castSpell()
 */
 
 //Code Here
+class Phone  {
+  constructor(brand, model, storage, color, price, sold) {
+    this.brand = brand;
+    this.model = model;
+    this.storage = storage;
+    this.color = color;
+    this.price = price;
+    this.sold = false;
+  }
+  sell() {
+    this.sold = true
+  
+    console.log(`${this.brand} ${this.model} has been sold.`)
+  }
+  changePrice(newPrice) {
+    this.price = newPrice
+   
+  }
+}
+
+const soldPhone = new Phone('iPhone', 13, '64GB', 'grey', 800)
+soldPhone.sell()
+soldPhone.changePrice(799)
 
   
 /*
