@@ -284,7 +284,7 @@ class Phone  {
 
 const soldPhone = new Phone('iPhone', 13, '64GB', 'grey', 800)
 soldPhone.sell()
-soldPhone.changePrice(799)
+soldPhone.changePrice(800)
 
   
 /*
@@ -299,6 +299,10 @@ soldPhone.changePrice(799)
 
 //Code Here
 
+
+const soldPhone1 = new Phone('Apple', 'iPhone13', 64, 'grey', 800)
+const soldPhone2 = new Phone('Motorola','Pebble', 256, 'black', 450)
+const soldPhone3 = new Phone('Apple', 'iPhone6', 128, 'white', 50)
 /* 
   Call the changePrice function on one of your phones, 
   don't forget to pass in a new price 
@@ -307,7 +311,8 @@ soldPhone.changePrice(799)
 */ 
 
 //Code Here 
-
+soldPhone1.changePrice(750)
+console.log(soldPhone1)
 
 /*
   Now call the sell method on one of your other phone objects
@@ -316,7 +321,8 @@ soldPhone.changePrice(799)
 */
 
 //Code Here 
-
+soldPhone3.sell()
+console.log(soldPhone3)
 
 //////////////////////////// PROBLEM 15 ////////////////////////////
 
